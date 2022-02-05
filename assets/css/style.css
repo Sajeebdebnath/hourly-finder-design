@@ -1683,3 +1683,133 @@ h2.contact-title, .faq-title h2 {
    margin: 7px 0;
 }
 /* -------------------------Job Seeker Profile Page CSS  End--------------------- */
+
+
+
+
+
+/* -------------------------All Job Page CSS  Start--------------------- */
+.all-search-bar-area {
+   padding: 30px 0;
+}
+
+.search-bar-all {
+   background: white;
+   border: 1px solid #DBDBDB;
+   box-shadow:0px 1px 5px 0px rgb(0 0 0 / 10%);
+   border-radius: 5px;
+   border-right: 0;
+}
+
+.search-by input {
+   width: 100%;
+   height: 100%;
+   position: relative;
+   padding: 15px 0;
+   padding-left: 50px;
+   font-size: 14px;
+   color: #838995;
+   border: none;
+   border-right: 1px solid #DADADA;
+}
+.search-by span {
+   position: absolute;
+   left: 15px;
+   top: 50%;
+   margin-top: -14px;
+   color: #16395f;
+}
+
+.search-by {
+   display: inline-block;
+   position: relative;
+   width: 100%;
+}
+.search-by input:focus-visible {outline: none;}
+.search-by.search-btn input {
+   padding: 15px;
+   background: #16395f;
+   color: white;
+   margin-left: 0px;
+}
+
+.grid-header {
+   background: #358fb21c;
+}
+.filter-area{
+   background-color: #16395f26;
+   height: 100%;
+}
+
+.filter-header.dark {
+   border-bottom: 1px solid #16395f1c;
+}
+
+.filter-header {
+   padding: 15px;
+   display: flex;
+   align-items: center;
+}
+
+.filter-header span svg {
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+
+.filter-header span {
+   padding-right: 20px;
+}
+
+.filter-header span.filter-header-text {
+   font-size: 16px;
+}
+.filter-header.right span {
+   padding: 0;
+   padding-left: 20px;
+}
+.all-filtered-job {
+   padding: 25px;
+}
+
+.all-filter {
+   padding: 15px 25px;
+}
+
+.filter-by p {
+   margin-bottom: 5px;
+}
+
+.filter-by label {
+   font-size: 14px;
+   padding-left: 5px;
+}
+.filter-by {
+   margin-bottom: 15px;
+}
+.job-alert-service {
+   padding: 10px  25px;
+}
+
+.job-alert-service h5 {
+   font-size: 18px;
+   color: #2B313F;
+}
+
+.job-alert-service p {
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+
+.job-alert-service input {
+   border: none;
+   border-radius: 5px;
+   padding: 9px 15px;
+   margin-bottom: 8px;
+}
+
+.job-alert-service input[type="submit"] {
+   background: #16395f;
+   color: white;
+}
+/* -------------------------All Job Page CSS  End--------------------- */
