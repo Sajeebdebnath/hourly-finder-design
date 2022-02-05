@@ -1813,3 +1813,34 @@ h2.contact-title, .faq-title h2 {
    color: white;
 }
 /* -------------------------All Job Page CSS  End--------------------- */
+
+
+
+/* -------------------------Recruiter Dashboard CSS  Start--------------------- */
+.dashboard-header {
+   background: #C2DCE5;
+   padding: 7px 0;
+}
+
+.header-icon {
+   display: flex;
+   justify-content: right;
+   align-items: center;
+}
+
+.header-icon img {
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   margin-left: 20px;
+}
+
+.header-icon span svg {
+   width: 30px;
+   height: 30px;
+   margin-top: 5px;
+   color: #16395F;
+}
+/* -------------------------Recruiter Dashboard CSS  End--------------------- */
+
+
