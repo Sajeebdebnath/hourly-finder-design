@@ -2061,7 +2061,7 @@ h3.right-bar-title {
 .activity-calender span.done {
    background: #96bea4;
 }
-.edit-profile-area {
+.edit-profile-area,.post-job-area {
    background: #f3f3f3ad;
    padding: 25px;
    border-radius: 5px;
@@ -2099,7 +2099,7 @@ h3.right-bar-title {
 .edit-organization-address .edit-title::before {
    width: 66%;
 }
-.edit-profile-area .form-field {
+.edit-profile-area .form-field,.post-job-area .form-field {
    margin-bottom: 15px;
 }
 .profile-img-edit {
