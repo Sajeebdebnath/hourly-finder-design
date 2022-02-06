@@ -1841,6 +1841,226 @@ h2.contact-title, .faq-title h2 {
    margin-top: 5px;
    color: #16395F;
 }
+.dashboard-all {
+   background: #E7EFF1;
+}
+
+.dashboard-sidebar .user {
+   padding: 20px;
+   text-align: center;
+   border-bottom: 1px solid #8888;
+}
+
+.dashboard-sidebar .user-photo {
+   width: 90px;
+   height: 90px;
+   margin: auto;
+   border-radius: 100%;
+}
+
+.dashboard-main {
+   background: white;
+   height: 100%;
+   padding: 15px 20px;
+}
+
+.user-info h5 {
+   font-size: 20px;
+   margin: 0;
+}
+
+.user-info {
+   margin-top: 10px;
+}
+
+.user-info p {
+   font-size: 14px;
+   color: gray;
+}
+
+.dashboard-navigation {
+   padding: 20px 0;
+}
+
+.dashboard-navigation nav ul li a {
+   padding: 7px 25px;
+   display: block;
+   transition: 0.3s;
+   font-size: 18px;
+}
+
+.dashboard-navigation nav ul li a span {
+   padding-right: 15px;
+}
+
+.dashboard-navigation nav ul li:hover a, .dashboard-navigation nav ul li:active a {
+   background: #c2dce5;
+   color: #16395f;
+}
+
+h3.dashboard-title {
+   font-size: 24px;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+
+.overview-item {
+   background: #F9DDA9;
+   padding: 14px 20px;
+   border-radius: 8px;
+   position: relative;
+}
+
+.overview-item .count {
+   color: #FFBC3A;
+   font-weight: 700;
+}
+
+.overview-item h5 {
+   font-size: 16px;
+   font-weight: 600;
+   margin-top: 5px;
+   margin-bottom: 0;
+}
+.overview-item .overview-icon {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+}
+
+span.overview-icon svg {
+   width: 40px;
+   height: 40px;
+   opacity: 20%;
+}
+.overview-item.two {
+   background: #B0D7EA;
+}
+
+.overview-item.two .count {
+   color: #358FB2;
+}
+
+.overview-item.three {
+   background: #DBFBCC;
+}
+
+.overview-item.three .count {
+   color: #96BEA4;
+}
+
+.overview-item.four {
+   background: #F6A3B4;
+}
+
+.overview-item.four .count {
+   color: #EE4D6E;
+}
+.dashboard-right-bar {
+   padding: 15px 20px;
+}
+
+h3.right-bar-title {
+   font-size: 24px;
+   font-weight: 400;
+   margin-bottom: 15px;
+}
+.dashboard-right-content {
+   margin-bottom: 30px;
+}
+.dashboard-right-item {
+   background: #b0d7ea;
+   width: 100%;
+   height: 150px;
+   border-radius: 8px;
+}
+.activity-item {
+   background: #E7EFF1;
+   border-radius: 5px;
+}
+
+.activity-title {
+   text-align: center;
+   padding: 8px 0;
+   border-bottom: 1px solid #cfcfcf;
+}
+
+.activity-wrapper {
+   padding: 15px 20px;
+}
+.recent-activity {
+   margin-bottom: 15px;
+}
+.recent-activity-icon {
+   display: inherit;
+}
+
+.recent-activity-icon span {
+   width: 40px;
+   height: 40px;
+   background: #358fb2;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 40px;
+}
+
+.recent-activity-title {
+   padding-left: 15px;
+}
+
+.recent-activity-icon svg {
+   width: 20px;
+   height: 20px;
+}
+
+.recent-activity-title h6 {
+   font-size: 14px;
+   margin: 0;
+}
+
+.recent-activity-title p {
+   font-size: 12px;
+}
+.recent-activity-icon span.done {
+   background: #96bea4;
+}
+.recent-activity-icon span.selected {
+   background: #ffbc3a;
+}
+
+.recent-activity-icon span.reviewed {
+   background: #DF865E;
+}
+.activity-calender span {
+   width: 40px;
+   height: 40px;
+   background: #dddd;
+   display: inline-block;
+   text-align: center;
+   line-height: 40px;
+   margin-bottom: 9px;
+   margin-right: 9px;
+   border-radius: 100%;
+}
+
+.activity-calender span a {
+   font-size: 16px;
+}
+
+.activity-calender {
+   display: inline-block;
+}
+.activity-calender span.applied {
+   background: #b0d7ea;
+}
+
+.activity-calender span.select {
+   background: #ffbc3a;
+}
+
+.activity-calender span.done {
+   background: #96bea4;
+}
 /* -------------------------Recruiter Dashboard CSS  End--------------------- */
 
 
