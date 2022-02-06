@@ -613,7 +613,7 @@ form.search-form svg {
    display: block;
    border: 2px solid #F2F2F2;
    box-sizing: border-box;
-   border-radius: 10px;
+   border-radius: 5px;
    width: 100%;
    color: #838995;
    font-size: var(--smallFont);
@@ -2060,6 +2060,96 @@ h3.right-bar-title {
 
 .activity-calender span.done {
    background: #96bea4;
+}
+.edit-profile-area {
+   background: #f3f3f3ad;
+   padding: 25px;
+   border-radius: 5px;
+}
+
+.edit-title {
+   position: relative;
+   font-size: 20px;
+   margin-bottom: 20px;
+}
+
+.edit-title::before {
+   content: "";
+   position: absolute;
+   width: 72%;
+   height: 2px;
+   top: 15px;
+   right: 0;
+   background: #a3b3b787;
+}
+
+.edit-basic-information {
+   margin-bottom: 30px;
+}
+
+.edit-organization-information {
+   margin-bottom: 30px;
+}
+
+.edit-organization-information .edit-title::before {
+   width: 61%;
+}
+
+.edit-organization-address .edit-title::before {
+   width: 66%;
+}
+.edit-profile-area .form-field {
+   margin-bottom: 15px;
+}
+.profile-img-edit {
+   width: 90px;
+   height: 90px;
+   margin: auto;
+   border-radius: 50%;
+   position: relative;
+   overflow: hidden;
+   margin-top: 10px;
+}
+
+.edit-profile-picture input {
+   border: none;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   border-radius: 0;
+}
+.edit-profile-picture input::-webkit-file-upload-button {
+   visibility: hidden;
+}
+
+.edit-profile-picture input::before {
+   position: absolute;
+   content: "";
+   background: #e7eff1;
+   width: 100px;
+   height: 80px;
+   text-align: center;
+   left: -6px;
+   top: 0;
+   opacity: 0.5;
+   display: inline-block;
+   color: #214367;
+   line-height: 33px;
+}
+.edit-profile-picture input::after {
+   position: absolute;
+   content: url(https://api.iconify.design/ant-design/camera-filled.svg?width=25);
+   left: 50%;
+   top: 5px;
+   opacity: 1;
+   display: inline-block;
+   line-height: 40px;
+   margin-left: -13px;
+}
+
+.edit-profile-picture p {
+   font-size: 12px;
+   margin-top: 5px;
 }
 /* -------------------------Recruiter Dashboard CSS  End--------------------- */
 
