@@ -2065,6 +2065,7 @@ h3.right-bar-title {
    background: #f3f3f3ad;
    padding: 25px;
    border-radius: 5px;
+   border: 1px solid #8888884a;
 }
 
 .edit-title {
