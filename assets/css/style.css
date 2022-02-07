@@ -2235,4 +2235,78 @@ h3.right-bar-title {
 .manage-job-table .btn.delete {
    background: #EE4D6E;
 }
+.ongoing-job-area {
+   background: #FBFBFB;
+   padding: 20px;
+   border-radius: 7px;
+   border: 1px solid #8888884d;
+}
+
+.ongoing-job-item {
+   background: #F4F4F4;
+   padding: 15px;
+   border-radius: 7px;
+   border: 0.5px solid #88888817;
+   align-items: center;
+   padding-bottom: 50px;
+   margin-bottom: 15px;
+}
+
+.ongoing-job-header {
+   display: flex;
+   justify-content: space-between;
+}
+
+.ongoing-job-header h5 {
+   font-size: 18px;
+   font-weight: 400;
+}
+
+.ongoing-job-header p {
+   color: #737171;
+   font-size: 14px;
+}
+
+.ongoing-job-cards .ongoing-card {
+   width: 40px;
+   height: 40px;
+   background: #C4C4C4;
+   border-radius: 50%;
+}
+
+.ongoing-job-cards {display: flex;justify-content: space-around;position: relative;z-index: 4;}
+
+.ongoing-card p {
+   margin-top: 45px;
+   margin-left: 3px;
+   font-size: 12px;
+   color: #666666;
+}
+
+.ongoing-job-progress {
+   width: 80%;
+   height: 4px;
+   background: #c4c4c494;
+   position: absolute;
+   margin: auto;
+   margin-top: -20px;
+   left: 10%;
+   z-index: 1;
+}
+
+.ongoing-job-content {
+   position: relative;
+}
+
+.ongoing-job-progress::before {
+   content: "";
+   position: absolute;
+   background: gray;
+   height: 4px;
+   width: 50%;
+   z-index: 2;
+}
+.ongoing-card.active {
+   background: gray;
+}
 /* -------------------------Recruiter Dashboard CSS  End--------------------- */
