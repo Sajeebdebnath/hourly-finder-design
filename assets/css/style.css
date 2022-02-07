@@ -2061,7 +2061,7 @@ h3.right-bar-title {
 .activity-calender span.done {
    background: #96bea4;
 }
-.edit-profile-area,.post-job-area {
+.edit-profile-area,.post-job-area,.manage-job-area {
    background: #f3f3f3ad;
    padding: 25px;
    border-radius: 5px;
@@ -2152,6 +2152,87 @@ h3.right-bar-title {
    font-size: 12px;
    margin-top: 5px;
 }
+.job-view-filter .form-field input,.job-view-filter .form-field select {
+   background: #FBFDFF;
+   border: 0.5px solid #CBCBCB;
+   font-weight: 300;
+}
+
+.job-view-filter {
+   margin-bottom: 20px;
+}
+.manage-job-table table th {
+   background: #e7eff1;
+   padding: 8px 20px;
+   width: 100%;
+}
+
+.manage-job-table table tbody td {
+   padding: 5px 10px;
+   background-color: #80808021;
+   font-size: 14px;
+   color: #2B313F;
+}
+.manage-job-table table tbody tr {
+   border-bottom: 15px solid #f7f7f7;
+   border-top: 15px solid #f7f7f7;
+}
+.manage-job-table .job-title {
+   margin: 0;
+}
+
+.manage-job-table .job-title h5 {
+   font-size: 18px;
+}
+
+.manage-job-table .job-title p {
+   font-size: 12px;
+}
+
+.manage-job-table .job-title p span svg {
+   color: #737171;
+   font-size: 14px;
+}
+.manage-job-table td .job-status {
+   background: #A6E5BC;
+   color: white;
+   font-size: 13px;
+   padding: 2px 5px;
+   border-radius: 4px;
+   text-align: center;
+}
+
+.manage-job-table td .job-status.pending {
+   background: #FFBC3A;
+}
+
+.manage-job-table th.title {
+   width: 60%;
+}
+
+.manage-job-table th.status {
+   width: 5%;
+}
+
+.manage-job-table th.date {
+   width: 16%;
+}
+
+.manage-job-table .btn {
+   padding: 5px 8px;
+   margin-right: 5px;
+}
+
+.manage-job-table .btn svg {
+   font-size: 18px;
+   color: black;
+}
+
+.manage-job-table .btn.edit {
+   background: #96BEA4;
+}
+
+.manage-job-table .btn.delete {
+   background: #EE4D6E;
+}
 /* -------------------------Recruiter Dashboard CSS  End--------------------- */
-
-
