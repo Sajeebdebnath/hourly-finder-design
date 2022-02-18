@@ -1988,7 +1988,7 @@ span.overview-icon svg {
 }
 
 h3.right-bar-title {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 400;
   margin-bottom: 15px;
 }
@@ -2344,5 +2344,43 @@ h3.right-bar-title {
 }
 .ongoing-card.active {
   background: gray;
+}
+
+.event-wrapper {
+  background: #add1dd61;
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.event-title {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+.event-item {
+  display: flex;
+  align-items: self-start;
+  margin-bottom: 15px;
+}
+
+.event-icon-wrap {
+  background: white;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.event-icon {
+  margin-right: 5px;
+}
+
+.event-title span {
+  color: black;
 }
 /* -------------------------Recruiter Dashboard CSS  End--------------------- */
