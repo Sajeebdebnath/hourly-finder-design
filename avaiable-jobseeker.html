@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HourlyFinder</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon Image -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <!-- CSS Here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/hover.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to
+        improve your experience.
+      </p>
+    <![endif]-->
+
+    <!-- ==================== Header Area Start ==================== -->
+    <div class="header-top-area">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-3">
+            <div class="logo">
+              <a href=""><img src="assets/images/Logo.png" alt="Logo" /></a>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="menu-area">
+              <nav>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">About Us</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </nav>
+              <a href="" class="btn join-us">Join Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================== Header Area End ==================== -->
+
+    <!-- ====================Blog Content Area Start ==================== -->
+    <div class="avaiable-jobseeker-area mt-70">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9">
+            <div class="avaiable-jobseeker-container">
+              <div class="avaiable-jobseeker-title">
+                <h3>Available JobSeekers</h3>
+              </div>
+              <div class="avaiable-jobseeker-wrapper">
+                <div class="avaiable-jobseeker-header">
+                  <p>
+                    <span><span class="iconify" data-icon="fa-solid:user-check"></span></span> JobSeekers
+                    available in your area
+                  </p>
+                </div>
+                <div class="avaiable-jobseeker-content">
+                  <div class="avaiable-jobseeker-filter">
+                    <div class="show-all-applicant">
+                      <p>
+                        <span><span class="iconify" data-icon="ion:checkmark-done-circle"></span></span>
+                        Available : 1649 Job Seekers
+                      </p>
+                      <div class="display-page">
+                        <span><span class="iconify" data-icon="ic:baseline-list-alt"></span></span> Showing 10
+                        Per Page
+                      </div>
+                    </div>
+                    <div class="applicant-filter">
+                      <div class="filter-meta">
+                        <span><span class="iconify" data-icon="ep:filter"></span></span>
+                        <span class="filter-header-text">Filter by:</span>
+                      </div>
+                      <div class="form-field">
+                        <select name="" id="">
+                          <option value="shortlisted">Short List</option>
+                          <option value="hired">Hired</option>
+                          <option value="rejected">Rejected</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="avaiable-jobseeker-cards-warapper">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <div class="avaible-jobseeker-card">
+                          <div class="avaiable-jobseeker-card-content">
+                            <div class="avaiable-jobseeker-profile">
+                              <div class="avaiable-jobseeker-dp"></div>
+                              <div class="avaiable-jobseeker-info">
+                                <h4 class="name">Sajeeb Debnath</h4>
+                                <p class="designation">Fullstack Developer</p>
+                                <div class="avaiabele-status">Available for Work</div>
+                              </div>
+                            </div>
+                            <div class="about-avaiable-jobseeker">
+                              <p>
+                                I am ipsum dolor sit amet, consectetur adipis eliot a dolor sit conctetur
+                                asdfsadf trtryt sas.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="avaiable-jobseeker-card-footer">
+                            <div class="avaiable-jobseeker-rating">
+                              <div class="rating">
+                                <span class="iconify checked" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify checked" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify checked" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                                <span class="iconify" data-icon="ant-design:star-filled"></span>
+                              </div>
+                              <span>3.0</span>
+                            </div>
+                            <a href="" class="btn jobseeker-profile">View Profile</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="avaiable-jobseeker-footer">
+                  <div class="pagination-wrapper">
+                    <a href="" class="page">
+                      <span class="iconify" data-icon="codicon:arrow-left"></span> Prev</a
+                    >
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="" class="active">3</a>
+                    <a href="">4</a>
+                    <a href="" class="page next"
+                      >Next <span class="iconify" data-icon="codicon:arrow-right"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="all-sidebar">
+              <div class="sidebar-title">
+                <h3>More Information</h3>
+              </div>
+              <div class="sidebar-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====================Blog Content Area End ==================== -->
+
+    <!-- ==================== Footer Area Start ==================== -->
+    <footer>
+      <div class="footer-menu-area section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Useful Links</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">All Jobs</a></li>
+                      <li><a href="">Blogs</a></li>
+                      <li><a href="">About Us</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Support</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li><a href="">FAQs</a></li>
+                      <li><a href="">How it works</a></li>
+                      <li><a href="">Features</a></li>
+                      <li><a href="">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Follow Us</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li><a href="">Facebook</a></li>
+                      <li><a href="">Twitter</a></li>
+                      <li><a href="">Linkedin</a></li>
+                      <li><a href="">YouTube</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Contact Us</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li>+880 12345678</li>
+                      <li>support@hourlyfinder.com</li>
+                      <li>37/B, Lake Circus Road</li>
+                      <li>Kalabagan, Dhaka-1207</li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright-area">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+              <div class="footer-logo"><img src="assets/images/homepage/footer-logo.png" alt="logo" /></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="copyright-text">
+                <p>Copyright 2021 &copy; Codedamn. All right reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================== Footer Area End ==================== -->
+
+    <!-- JS Here -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/logic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </body>
+</html>
