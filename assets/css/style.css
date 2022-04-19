@@ -2802,3 +2802,178 @@ h3.right-bar-title {
   display: block;
 }
 /* -------------------------Dashboard dropdown menu CSS  end--------------------- */
+
+/* -------------------------Dashboard Messenger menu CSS --------------------- */
+.msging-area {
+  border: 0.3px solid #8888884f;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.msg-left-bar {
+  background: #ececec;
+  height: 100%;
+}
+.contact-search-bar {
+  padding: 20px 15px;
+  padding-top: 25px;
+}
+
+.contact-search-bar .form-field {
+  position: relative;
+}
+
+.contact-search-bar .form-field .icon {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  margin-top: 8px;
+  border-radius: 5px;
+}
+
+.contact-search-bar .form-field .icon svg {
+  color: #c4c4c4;
+  width: 22px;
+  height: 22px;
+}
+
+.contact-search-bar .form-field input {
+  padding-left: 35px;
+  border-color: #46464636;
+  font-size: 14px;
+  margin: 0;
+}
+.single-contact-item .contact-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 10px;
+  background-repeat: no-repeat;
+}
+
+.single-contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 10px 0;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+.single-contact-item .contact-info h6 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.single-contact-item .contact-info p {
+  font-size: 12px;
+}
+.contact-info.unread h6,
+.contact-info.unread p {
+  font-weight: 600;
+}
+
+.single-contact-item:hover,
+.single-contact-item .active {
+  background: #e0e0e0;
+}
+.contact-list {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.conversation-contact-list.scroll {
+  padding-bottom: 60px;
+  height: 100%;
+}
+
+.contact-list::-webkit-scrollbar {
+  width: 7px;
+}
+.contact-list::-webkit-scrollbar-track {
+  background: #ececec;
+}
+.contact-list::-webkit-scrollbar-thumb {
+  background-color: #a7a7a7;
+  border-radius: 10px;
+}
+.contact-list::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
+.msg-top-bar {
+  background: #f4f4f4;
+  padding: 10px 20px;
+}
+
+.msg-top-bar h5 {
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.msg-top-bar p {
+  font-size: 14px;
+}
+.conversation-text-area {
+  background: #fbfbfb;
+}
+
+.conversation-text .text {
+  background: #f5f5f5;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 10px;
+  width: 70%;
+  text-align: right;
+}
+
+.conversation-text .text .msg {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: black;
+}
+
+.conversation-text {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.conversation-text .text .time {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #8b8b8b;
+}
+.conversation-text.sender {
+  text-align: left;
+}
+
+.conversation-text.sender .text {
+  background: #dddddd;
+  text-align: left;
+}
+
+.conversation-text-list {
+  height: 350px;
+  overflow-y: auto;
+  padding: 10px;
+}
+.conversation-text-list::-webkit-scrollbar {
+  width: 7px;
+}
+.conversation-text-list::-webkit-scrollbar-track {
+  background: #ececec;
+}
+.conversation-text-list::-webkit-scrollbar-thumb {
+  background-color: #a7a7a7;
+  border-radius: 10px;
+}
+.conversation-text-list::-webkit-scrollbar-thumb:hover {
+  background: #505050;
+}
