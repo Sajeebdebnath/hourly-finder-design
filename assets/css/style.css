@@ -2880,7 +2880,7 @@ h3.right-bar-title {
 }
 
 .single-contact-item:hover,
-.single-contact-item .active {
+.single-contact-item.active {
   background: #e0e0e0;
 }
 .contact-list {
@@ -3045,4 +3045,46 @@ h3.right-bar-title {
 .msg-sending-area .files-area {
   display: flex;
   align-items: center;
+}
+.msg-right-bar {
+  background: #ececec;
+  height: 100%;
+}
+
+.contact-information .contact-profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+}
+.contact-information {
+  display: flex;
+  justify-content: center;
+  height: 230px;
+  align-items: center;
+  border-bottom: 0.3px solid #8888;
+}
+.contact-information .information-text h4,
+.contact-information .information-text p {
+  text-align: center;
+  margin: 0;
+}
+
+.contact-information .information-text h4 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.contact-information .information-text .designation {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 2px 0;
+}
+
+.contact-information .information-text .company {
+  font-size: 12px;
+  font-weight: 600;
 }
