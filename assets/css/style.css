@@ -2977,3 +2977,72 @@ h3.right-bar-title {
 .conversation-text-list::-webkit-scrollbar-thumb:hover {
   background: #505050;
 }
+
+.msg-sending-area .file-field,
+.msg-sending-area .emoji-field {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #c4c4c4;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 7px;
+}
+
+.msg-sending-area .file-field input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.msg-sending-area .file-field::after {
+  position: absolute;
+  content: url("https://api.iconify.design/akar-icons/attach.svg");
+  top: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 34px;
+}
+
+.msg-sending-area .emoji-field {
+  text-align: center;
+  line-height: 30px;
+}
+.msg-sending-area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 10px 0;
+}
+
+.msg-sending-area .msg-field {
+  width: 70%;
+  position: relative;
+}
+
+.msg-sending-area .msg-field input[type="text"] {
+  margin: 0;
+  padding: 10px 15px;
+  padding-right: 30px;
+}
+.msg-sending-area .msg-field button {
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  border: none;
+  background: transparent;
+  color: #aaaaaa;
+  margin-top: -16px;
+  font-size: 20px;
+}
+.msg-sending-area .files-area {
+  display: flex;
+  align-items: center;
+}
