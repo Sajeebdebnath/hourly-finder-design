@@ -2780,3 +2780,25 @@ h3.right-bar-title {
   margin-bottom: 10px;
 }
 /* -------------------------Avaiabel Job Seeker Page CSS  End--------------------- */
+
+/* -------------------------Dashboard dropdown menu CSS  Start--------------------- */
+.dashboard-navigation nav ul li .icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dashboard-navigation nav ul li {
+  position: relative;
+}
+
+.dashboard-navigation nav ul li .sub-menu {
+  padding: 10px 20px;
+  background: red;
+  display: none;
+}
+
+.dashboard-navigation nav ul li.showMenu .sub-menu {
+  display: block;
+}
+/* -------------------------Dashboard dropdown menu CSS  end--------------------- */

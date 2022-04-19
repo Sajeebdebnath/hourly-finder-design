@@ -4,282 +4,336 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Recruiter Dashboard</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <!-- Favicon Image -->
-        <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Recruiter Dashboard</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- CSS Here -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <link rel="stylesheet" href="assets/css/hover.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-        <link rel="stylesheet" href="assets/css/default.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/responsive.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
+    <!-- Favicon Image -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico" />
 
-        <!-- ==================== Dashboard Area Start ==================== -->
-        <div class="dashboard-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <a href="" class="dashboard-logo"><img src="/assets/images/Logo.png" alt="HourlyFinder"></a>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="header-icon">
-                            <span><a href="#"><span class="iconify" data-icon="ci:notification"></span></a></span>
-                            <a href="#"><img src="https://placeimg.com/100/100/people?t=1640373129965" alt="User"></a>
-                        </div>
-                    </div>
-                </div>
+    <!-- CSS Here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/hover.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="assets/css/default.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to
+        improve your experience.
+      </p>
+    <![endif]-->
+
+    <!-- ==================== Dashboard Area Start ==================== -->
+    <div class="dashboard-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="" class="dashboard-logo"><img src="/assets/images/Logo.png" alt="HourlyFinder" /></a>
+          </div>
+          <div class="col-lg-9">
+            <div class="header-icon">
+              <span
+                ><a href="#"><span class="iconify" data-icon="ci:notification"></span></a
+              ></span>
+              <a href="#"><img src="https://placeimg.com/100/100/people?t=1640373129965" alt="User" /></a>
             </div>
+          </div>
         </div>
-        <div class="dashboard-all">
-            <div class="container-fluid">
-                <div class="row g-0">
-                     <!-- ==================== Dashboard Left Sidebar Area Start ==================== -->
-                    <div class="col-lg-2">
-                        <div class="dashboard-sidebar">
-                            <div class="user">
-                                <div class="user-photo" style="background-image: url(https://placeimg.com/100/100/people?t=1640373129965);"></div>
-                                <div class="user-info">
-                                    <h5>Sajeeb Debnath</h5>
-                                    <p>Recruiter</p>
-                                </div>
-                            </div>
-    
-                            <div class="dashboard-navigation">
-                                <nav>
-                                    <ul>
-                                        <li><a href="#"><span><span class="iconify" data-icon="dashicons:dashboard"></span></span>Dashboard</a></li>
-                                        <li><a href="#"><span><span class="iconify" data-icon="fa-solid:search-location"></span></span>Post Jobs</a></li>
-                                        <li><a href="#"><span><span class="iconify" data-icon="clarity:list-line"></span></span>Manage Posts</a></li>
-                                        <li><a href="#"><span><span class="iconify" data-icon="bx:bxs-briefcase"></span></span>Ongoing Jobs</a></li>
-                                        <li><a href="#"><span><span class="iconify" data-icon="bx:bx-message-detail"></span></span>Messages</a></li>
-                                        <li><a href="#"><span><span class="iconify" data-icon="bx:bxs-user-circle"></span></span>Edit Profile</a></li>
-                                        <li><a href="#"><span><span class="iconify"  data-icon="mdi:logout"></span></span>Logout</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-    
-                        </div>
-                    </div>
-                     <!-- ==================== Dashboard Left Sidebar End ==================== -->
+      </div>
+    </div>
+    <div class="dashboard-all">
+      <div class="container-fluid">
+        <div class="row g-0">
+          <!-- ==================== Dashboard Left Sidebar Area Start ==================== -->
+          <div class="col-lg-2">
+            <div class="dashboard-sidebar">
+              <div class="user">
+                <div
+                  class="user-photo"
+                  style="background-image: url(https://placeimg.com/100/100/people?t=1640373129965)"
+                ></div>
+                <div class="user-info">
+                  <h5>Sajeeb Debnath</h5>
+                  <p>Recruiter</p>
+                </div>
+              </div>
 
-                     <!-- ==================== Dashboard Main Section Start ==================== -->
-                    <div class="col-lg-7">
-                        <div class="dashboard-main">
-                            <h3 class="dashboard-title">Message</h3>
-                            <div class="dashboard-content">
-                              
-                            </div>
-                        </div>
-                    </div>
-                     <!-- ==================== Dashboard Main Section End ==================== -->
+              <div class="dashboard-navigation">
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="dashicons:dashboard"></span></span
+                        >Dashboard</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="fa-solid:search-location"></span></span>Post
+                        Jobs</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="clarity:list-line"></span></span>Manage
+                        Posts</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="bx:bxs-briefcase"></span></span>Ongoing
+                        Jobs</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="bx:bx-message-detail"></span></span
+                        >Messages</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="bx:bxs-user-circle"></span></span>Edit
+                        Profile</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><span><span class="iconify" data-icon="mdi:logout"></span></span>Logout</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- ==================== Dashboard Left Sidebar End ==================== -->
 
-
-                      <!-- ==================== Dashboard Right Sidebar Start ==================== -->
+          <!-- ==================== Dashboard Main Section Start ==================== -->
+          <div class="col-lg-10">
+            <div class="dashboard-main">
+              <h3 class="dashboard-title">Messages</h3>
+              <div class="dashboard-content">
+                <div class="msging-area">
+                  <div class="row">
                     <div class="col-lg-3">
-                        <div class="dashboard-right-bar">
-                            <div class="dashboard-right-content">
-                                <h3 class="right-bar-title">Upcoming events</h3>
-                                <div class="dashboard-right-item"></div>
-                            </div>
-                            <div class="dashboard-right-content">
-                                <h3 class="right-bar-title">Newly Posted Jobs</h3>
-                                <div class="job-cards">
-                                    <div class="job-card">
-                                        <div class="about-recruiter d-flex align-items-center">
-                                            <a href=""><img src="assets/images/homepage/recruiter-logo.png" alt="logo" class="recruiter-logo"></a>
-                                            <h5 class="recruiter-title">
-                                                <a href="">Founders,</a>
-                                                <span class="post_time">8h ago</span>
-                                            </h5>
-                                        </div>
-                                        <div class="job-content">
-                                            <h3 class="job-title">
-                                                <a href="">Complete House Paintings Services</a>
-                                            </h3>
-                                            <div class="job-status">
-                                                <span class="job-type">Hourly</span> in
-                                                <span class="job-location"><a href="">Banani</a></span>
-                                            </div>
-                                            <div class="job-keyword">
-                                                <a href="" class="job-tag"><div class="creative"></div> Creative</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="job-card">
-                                        <div class="about-recruiter d-flex align-items-center">
-                                            <a href=""><img src="assets/images/homepage/recruiter-logo.png" alt="logo" class="recruiter-logo"></a>
-                                            <h5 class="recruiter-title">
-                                                <a href="">Founders,</a>
-                                                <span class="post_time">8h ago</span>
-                                            </h5>
-                                        </div>
-                                        <div class="job-content">
-                                            <h3 class="job-title">
-                                                <a href="">Complete House Paintings Services</a>
-                                            </h3>
-                                            <div class="job-status">
-                                                <span class="job-type">Hourly</span> in
-                                                <span class="job-location"><a href="">Banani</a></span>
-                                            </div>
-                                            <div class="job-keyword">
-                                                <a href="" class="job-tag"><div class="creative"></div> Creative</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="job-card">
-                                        <div class="about-recruiter d-flex align-items-center">
-                                            <a href=""><img src="assets/images/homepage/recruiter-logo.png" alt="logo" class="recruiter-logo"></a>
-                                            <h5 class="recruiter-title">
-                                                <a href="">Founders,</a>
-                                                <span class="post_time">8h ago</span>
-                                            </h5>
-                                        </div>
-                                        <div class="job-content">
-                                            <h3 class="job-title">
-                                                <a href="">Complete House Paintings Services</a>
-                                            </h3>
-                                            <div class="job-status">
-                                                <span class="job-type">Hourly</span> in
-                                                <span class="job-location"><a href="">Banani</a></span>
-                                            </div>
-                                            <div class="job-keyword">
-                                                <a href="" class="job-tag"><div class="creative"></div> Creative</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                      <div class="msg-left-bar">
+                        <div class="contact-search-bar">
+                          <form action="">
+                            <input type="text" name="search" placeholder="Search..." />
+                          </form>
                         </div>
+                        <div class="conversation-contact-list scroll">
+                          <div class="contact-list">
+                            <div
+                              class="single-contact-item"
+                              style="
+                                background-image: url(https://lh3.googleusercontent.com/tbJfKBLnH018OGRjudkgWq8qRCk-G5f6n8T-8SZwZmuRyLFaCkXX2sbb8JlsznXQUVge3CwwPrJZ9TCV-3xEKk5A5xxVdpqcuV5DmTbluBAWvrpca3ZOavwtk3OBXDHGaCiXo0hVtbMPIY53vUdZOZ6fK1Yiiu_CzQviFniFY4Xc_-l3cNxaQBJu2qcuZk5heFj3tU3H2iIdJZVoSn1SDWmM4c8jWF-Fhx_Krw9IBy-BFcTZA9-idwi_BE9Xfb2CNmZCZKseAif8m7Ma5vYjt2fliFLdb8kndiWJpUJnn3QXC9sbE1Y1aiyhi3IfeY2mPTzgczDWgvf_S5p8FSG3DGh-rd_TonRbbhL5MXpQdxVih5X8UKNOpvgA-Gj4S6q1ENFMEHHktX4prfn3jGjnpfd-E-6wuXQ14dJ17Ca2oyr8Rt-uCiUBJsdFZkS9Ogp1JGRkgmrfRJh7vkjC5hFqA0SlD7ynNHyZ7naQIaa8LUUiwRgW-DKewpPjSHqmd5F94kkolm-zFkhxTjUAUI8HP14SzNXslHs4o3WhC58q6sT3k4HkXxUlict2qjO3h7rl-21e7lyKIDktEtIjFn3bwYByBrbDUd0B5PskT9YKKG4tEOJgTChEc9p0IYWjm3hrOndfjTtqiRmkdi5nE7NmzhROTodkg4Gj9kiP893ofh1spIpVYo4Vl1T-awq2cgsf9kotaoFFZMreUcSSX0YQPkiY9qWarN0g3Xs20wizbxALm9XK7iYCT75HBsnocNEhnXLOngedGRogC_DBqa3GeUn6c19_78bYd2QcdV19It9qRz-8yoWilc_fYOyJehkf8Lp6aES7L_0RLEwBb5OF9bof4eT5fbm4spZ6TASBfH0S7HmgvblbXe_aaO7TBY-aDdgeLMvU5A=w493-h657-no?authuser=1);
+                              "
+                            >
+                              <div class="contact-pic"></div>
+                              <div class="contact-info">
+                                <h6>Sajeeb Debnath</h6>
+                                <p>Yeah, I have seen that...</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                     <!-- ==================== Dashboard Right Sidebar End ==================== -->
+                    <div class="col-lg-6">
+                      <div class="msg-main">
+                        <div class="msg-top-bar">
+                          <h5>Sajeeb Debnath</h5>
+                          <p>Active 20 min ago</p>
+                        </div>
+                        <div class="conversation-text-area">
+                          <div class="conversation-text-list">
+                            <div class="conversation-text">
+                              <div class="text">
+                                <p class="msg">
+                                  Sir, I have sent you my resume. Please review the document and reply me if
+                                  you like it.
+                                </p>
+                                <p class="time">08:37 PM</p>
+                              </div>
+                            </div>
+                            <div class="conversation-text">
+                              <div class="text">
+                                <p class="msg">Okay. I will review it shortly. :)</p>
+                                <p class="time">08:37 PM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="msg-sending-area">
+                          <div class="emoji-field">
+                            <span><span class="iconify" data-icon="fluent:emoji-48-filled"></span></span>
+                          </div>
+                          <div class="file-field"><input type="file" name="file" /></div>
+                          <div class="msg-field">
+                            <input type="text" placeholder="Write message.." />
+                            <button type="submit">
+                              <span class="iconify" data-icon="zondicons:send"></span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3">
+                      <div class="msg-right-bar">
+                        <div class="contact-information">
+                          <div
+                            class="contact-profile"
+                            style="
+                              background-image: url(https://lh3.googleusercontent.com/tbJfKBLnH018OGRjudkgWq8qRCk-G5f6n8T-8SZwZmuRyLFaCkXX2sbb8JlsznXQUVge3CwwPrJZ9TCV-3xEKk5A5xxVdpqcuV5DmTbluBAWvrpca3ZOavwtk3OBXDHGaCiXo0hVtbMPIY53vUdZOZ6fK1Yiiu_CzQviFniFY4Xc_-l3cNxaQBJu2qcuZk5heFj3tU3H2iIdJZVoSn1SDWmM4c8jWF-Fhx_Krw9IBy-BFcTZA9-idwi_BE9Xfb2CNmZCZKseAif8m7Ma5vYjt2fliFLdb8kndiWJpUJnn3QXC9sbE1Y1aiyhi3IfeY2mPTzgczDWgvf_S5p8FSG3DGh-rd_TonRbbhL5MXpQdxVih5X8UKNOpvgA-Gj4S6q1ENFMEHHktX4prfn3jGjnpfd-E-6wuXQ14dJ17Ca2oyr8Rt-uCiUBJsdFZkS9Ogp1JGRkgmrfRJh7vkjC5hFqA0SlD7ynNHyZ7naQIaa8LUUiwRgW-DKewpPjSHqmd5F94kkolm-zFkhxTjUAUI8HP14SzNXslHs4o3WhC58q6sT3k4HkXxUlict2qjO3h7rl-21e7lyKIDktEtIjFn3bwYByBrbDUd0B5PskT9YKKG4tEOJgTChEc9p0IYWjm3hrOndfjTtqiRmkdi5nE7NmzhROTodkg4Gj9kiP893ofh1spIpVYo4Vl1T-awq2cgsf9kotaoFFZMreUcSSX0YQPkiY9qWarN0g3Xs20wizbxALm9XK7iYCT75HBsnocNEhnXLOngedGRogC_DBqa3GeUn6c19_78bYd2QcdV19It9qRz-8yoWilc_fYOyJehkf8Lp6aES7L_0RLEwBb5OF9bof4eT5fbm4spZ6TASBfH0S7HmgvblbXe_aaO7TBY-aDdgeLMvU5A=w493-h657-no?authuser=1);
+                            "
+                          ></div>
+
+                          <div class="information-text">
+                            <h4>Sajeeb Debnath</h4>
+                            <p class="designation">Human Resource</p>
+                            <p class="company">Alpha Beta Company</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <!-- ==================== Dashboard Main Section End ==================== -->
         </div>
-         <!-- ==================== Dashboard Area End ==================== -->
+      </div>
+    </div>
+    <!-- ==================== Dashboard Area End ==================== -->
 
-
- 
-        <!-- ==================== Footer Area Start ==================== -->
-        <footer>
-            <div class="footer-menu-area section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <div class="footer-menu-wrapper">
-                                <div class="section-title">
-                                    <h3>Useful Links</h3>
-                                </div>
-                                <div class="footer-menu">
-                                    <nav>
-                                        <ul>
-                                            <li><a href="">Home</a></li>
-                                            <li><a href="">All Jobs</a></li>
-                                            <li><a href="">Blogs</a></li>
-                                            <li><a href="">About Us</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="footer-menu-wrapper">
-                                <div class="section-title">
-                                    <h3>Support</h3>
-                                </div>
-                                <div class="footer-menu">
-                                    <nav>
-                                        <ul>
-                                            <li><a href="">FAQs</a></li>
-                                            <li><a href="">How it works</a></li>
-                                            <li><a href="">Features</a></li>
-                                            <li><a href="">Contact</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="footer-menu-wrapper">
-                                <div class="section-title">
-                                    <h3>Follow Us</h3>
-                                </div>
-                                <div class="footer-menu">
-                                    <nav>
-                                        <ul>
-                                            <li><a href="">Facebook</a></li>
-                                            <li><a href="">Twitter</a></li>
-                                            <li><a href="">Linkedin</a></li>
-                                            <li><a href="">YouTube</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="footer-menu-wrapper">
-                                <div class="section-title">
-                                    <h3>Contact Us</h3>
-                                </div>
-                                <div class="footer-menu">
-                                    <nav>
-                                        <ul>
-                                            <li>+880 12345678</li>
-                                            <li>support@hourlyfinder.com</li>
-                                            <li>37/B, Lake Circus Road</li>
-                                            <li>Kalabagan, Dhaka-1207</li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <!-- ==================== Footer Area Start ==================== -->
+    <footer>
+      <div class="footer-menu-area section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Useful Links</h3>
                 </div>
-            </div>
-
-            <div class="footer-copyright-area">
-                <div class="container">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-lg-6">
-                            <div class="footer-logo"><img src="assets/images/homepage/footer-logo.png" alt="logo"></div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="copyright-text">
-                                <p>Copyright 2021 &copy; Codedamn. All right reserved.</p>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">All Jobs</a></li>
+                      <li><a href="">Blogs</a></li>
+                      <li><a href="">About Us</a></li>
+                    </ul>
+                  </nav>
                 </div>
+              </div>
             </div>
-        </footer>
-        <!-- ==================== Footer Area End ==================== -->
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Support</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li><a href="">FAQs</a></li>
+                      <li><a href="">How it works</a></li>
+                      <li><a href="">Features</a></li>
+                      <li><a href="">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Follow Us</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li><a href="">Facebook</a></li>
+                      <li><a href="">Twitter</a></li>
+                      <li><a href="">Linkedin</a></li>
+                      <li><a href="">YouTube</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="footer-menu-wrapper">
+                <div class="section-title">
+                  <h3>Contact Us</h3>
+                </div>
+                <div class="footer-menu">
+                  <nav>
+                    <ul>
+                      <li>+880 12345678</li>
+                      <li>support@hourlyfinder.com</li>
+                      <li>37/B, Lake Circus Road</li>
+                      <li>Kalabagan, Dhaka-1207</li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="footer-copyright-area">
+        <div class="container">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-6">
+              <div class="footer-logo"><img src="assets/images/homepage/footer-logo.png" alt="logo" /></div>
+            </div>
+            <div class="col-lg-6">
+              <div class="copyright-text">
+                <p>Copyright 2021 &copy; Codedamn. All right reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- ==================== Footer Area End ==================== -->
 
-
-        <!-- JS Here -->
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin="">
-        </script>
-        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-        <script src="assets/js/logic.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    </body>
+    <!-- JS Here -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/logic.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  </body>
 </html>
